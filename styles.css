@@ -1,0 +1,57 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "menu main advertisement"
+        "footer footer footer";
+    grid-template-columns: 1fr minmax(300px, 400px) 3fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+main {
+    grid-area: main;
+    text-align: center;
+    padding: 1em;
+}
+
+.advertisement {
+    grid-area: advertisement;
+    text-align: right;
+    padding: 1em;
+}
+
+.advertisement img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
